@@ -1,5 +1,6 @@
 - name: "configure {{ component }} server"
   hosts: "{{ component }}"
   become: true
+  serial: 5 #this should be given in play level#parallel execution entire play book is run on 5 servers first
   roles:
   - "{{ component }}"
