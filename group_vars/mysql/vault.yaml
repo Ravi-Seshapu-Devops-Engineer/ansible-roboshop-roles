@@ -1,4 +1,4 @@
-MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/dev/mysql_root_password', region='us-east-1', decrypt='True')}}"
+MYSQL_ROOT_PASSWORD: "{{ lookup('amazon.aws.aws_ssm', '/roboshop/dev/mysql_root_password', region='us-east-1', decrypt=True)}}"
 
 # $ANSIBLE_VAULT;1.1;AES256
 # 38386635306431616362663631653132363533346237653462346266326264633630636465366366
