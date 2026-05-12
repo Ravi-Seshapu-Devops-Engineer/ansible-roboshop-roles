@@ -3,3 +3,8 @@ regions:
 -  us-east-1
 hostnames:
 - private-ip-address
+filters:
+  # This selects only running instances with tag `Name` tag set to `frontend-dev`.
+  instance-state-name : running
+  tag:Name: frontend-dev
+  
