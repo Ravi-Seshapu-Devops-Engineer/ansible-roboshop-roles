@@ -3,16 +3,13 @@ regions:
 -  us-east-1
 hostnames:
 - private-ip-address
-
 filters:
   # This selects only running instances with tag `Name` tag set to `frontend-dev`.
   instance-state-name : running
   tag:Name: frontend-dev
-
 compose:
   # This sets the ansible_host variable to connect with the private IP address without changing the hostname.
   ansible_host: private_ip_address
-  
 keyed_groups:
 # This creates host groups based on architecture.
 - seperator: ""
