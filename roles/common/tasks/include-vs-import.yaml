@@ -1,0 +1,11 @@
+- name: Message1
+  ansible.builtin.debug:
+    msg: "Hi from Message1"
+
+- name: Message2
+  ansible.builtin.debug:
+    msg: "Hi from Message2"
+
+- name: Message3
+  ansible.builtin.debug:
+    msg: "Hi from Message3"
